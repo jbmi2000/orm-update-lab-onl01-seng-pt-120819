@@ -57,7 +57,7 @@ class Student
       student
 
     end
-binding.pry 
+binding.pry
   end
 
 
