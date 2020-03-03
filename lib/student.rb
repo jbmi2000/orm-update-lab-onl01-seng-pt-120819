@@ -50,8 +50,8 @@ class Student
     DB[:conn].execute(sql, self.name, self.grade, self.id)
     end
 
-    def self.create(name:, grade:)
-      new_student = Student.new(@name, @grade)
+    def self.create(row)
+      new_student = Student.new
       new_student.id = row[0]
       neW_student.name = row[1]
       new_student.grade = row[2]
